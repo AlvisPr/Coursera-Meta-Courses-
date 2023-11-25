@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&family=Roboto:wght@100;300;400&display=swap');
+
+/*general config*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url("Images/Background4.png");
+    background-attachment: fixed;
+    margin-bottom: 3rem;
+    margin: 2rem auto;
+    max-width: 1400px;
+  display: block;
+  height: 100vh;
+}
+
+.wrapper{
+    background-color: linen;
+    max-width: 100%;
+    padding: 5rem;
+}
+
+/*end of general config*/
+
+
+/*header*/
+
+header img {
+    width: 100%;
+    height: 250px;
+}
+
+p,h2,h1,a {
+    font-family: "Roboto";
+}
+
+
+/* Header */ 
+
+
+
+/*navigation*/
+
+nav {
+    background-color: #495e57;
+    height: 80px;
+    border-radius: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 10px solid lightslategrey;
+   
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    font-size: 2rem;
+
+}
+
+nav ul li:hover {
+    background-color: lightslategrey;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white
+}
+
+/*End Navigation*/
+
+
+
+/*banner section*/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 0.9rem;
+    position: relative;
+    border: 10px solid lightslategrey;
+}
+
+.banner h2 {
+font-size: 2rem;
+}
+
+.banner img {
+ width: 100%;
+   border-radius: 0.9rem;
+}
+
+.banner div {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #495e57;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    font-weight: 200;
+}
+
+/*end of banner section */ 
+
+
+
+/*Main section*/ 
+
+.main {
+width: 100%;
+margin-top: 3rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 1rem;
+}
+
+.main a {
+    color: lightcoral;
+}
+
+.main article:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+.main article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: #495e57;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.9rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    border: 10px solid lightslategrey;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main article h1 {
+    font-size: 2rem;
+}
+.main img {
+    max-width: 100%;
+    height: auto;
+       
+}
+
+.working-days{
+    list-style-type: none;
+    line-height: 1.5rem;
+
+}
+
+.working-days li{
+    font-size: 1.2rem;
+    font-family: "roboto";
+    font-weight: 200;
+    color: rgb(211, 211, 87);
+}
+
+
+/*End of main section */ 
+
+
+
+
+
+/*footer section*/ 
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+footer img {
+height: 94.125px;
+}
+
+footer p {
+    font-size:2rem; 
+    font-weight: 400;
+    border-bottom: 4px solid #495e57 ;
+    padding-bottom: 1rem;
+}
+
+/*footer section*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media quaries*/ 
+
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+   nav ul {
+    display: flex;
+    flex-direction: column;
+   }
+
+   nav{
+    height:300px;
+   }
+
+
+   .main article{
+    transform: none;
+   }
+
+
+   .main article:hover {
+    transform: none; 
+    cursor: pointer;
+}
+
+.banner {
+    height:auto;
+  }
+
+.banner img {
+    width: auto; 
+    border-radius: 0.9rem;
+}
+
+footer {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.wrapper {
+    padding: 1.5rem;
+}
+
+
+}
+
+/*media queries */ 
